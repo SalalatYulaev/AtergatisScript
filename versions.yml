@@ -135,3 +135,5 @@ versions:
 - 1.13.3: 'test: Test after renaming git repo'
 - 1.13.4: 'test: Test after renaming git repo'
 - 1.13.5: 'stable: Test git repos'
+- 1.13.6: 'stable: Test git repos'
+- 1.13.7: 'stable: Test pushing both repos'
