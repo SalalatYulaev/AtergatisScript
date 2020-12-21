@@ -157,3 +157,4 @@ versions:
 - 1.14.9: 'stable: Added building sleep'
 - 1.14.10: 'test: Added templates'
 - 1.14.11: 'test: Fixed deploy file'
+- 1.14.12: 'test: Fixed deploy file'
