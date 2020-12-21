@@ -154,3 +154,4 @@ versions:
 - 1.14.6: 'stable: Fixed bug_6# but bug 1 is in dorf2 upgrade too'
 - 1.14.7: 'stable: Fixed bugs 1 and 5'
 - 1.14.8: 'test: Added more debug to Adventures script'
+- 1.14.9: 'stable: Added building sleep'
