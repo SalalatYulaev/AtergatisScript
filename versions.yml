@@ -143,3 +143,5 @@ versions:
 - 1.13.11: 'test: Modified Versions script'
 - 1.13.12: 'test: Fixed Versions script'
 - 1.13.13: 'test: Restored Versions script'
+- 1.14.0: 'stable: Added new public git repo with stable script version, changed versions
+    script and deploy script'
