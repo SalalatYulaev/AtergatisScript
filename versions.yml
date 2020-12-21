@@ -145,3 +145,5 @@ versions:
 - 1.13.13: 'test: Restored Versions script'
 - 1.14.0: 'stable: Added new public git repo with stable script version, changed versions
     script and deploy script'
+- 1.14.1: 'test: Reported bugs 5,6; added more debug in calculate resources functions
+    AtergatisMain script'
