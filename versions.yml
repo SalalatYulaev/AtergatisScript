@@ -163,3 +163,4 @@ versions:
 - 1.14.15: 'test: Added and tested Dorf1 template, removed data_build_dorf1.txt from
     init script, but left check of it presence'
 - 1.14.16: 'test: Fixed get_village_link function'
+- 1.14.17: 'test: testing raskat script'
