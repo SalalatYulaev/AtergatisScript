@@ -141,3 +141,5 @@ versions:
 - 1.13.9: 'stable: Added copy deploy script and butracker file to prod dir'
 - 1.13.10: 'stable: Added copy deploy script and butracker file to prod dir'
 - 1.13.11: 'test: Modified Versions script'
+- 1.13.12: 'test: Fixed Versions script'
+- 1.13.13: 'test: Restored Versions script'
