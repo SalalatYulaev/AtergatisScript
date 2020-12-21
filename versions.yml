@@ -159,3 +159,4 @@ versions:
 - 1.14.11: 'test: Fixed deploy file'
 - 1.14.12: 'test: Fixed deploy file'
 - 1.14.13: 'test: Fixed deploy file. Wrong dirs'
+- 1.14.14: 'test: Test new dorf1 template'
