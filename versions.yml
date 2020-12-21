@@ -155,3 +155,4 @@ versions:
 - 1.14.7: 'stable: Fixed bugs 1 and 5'
 - 1.14.8: 'test: Added more debug to Adventures script'
 - 1.14.9: 'stable: Added building sleep'
+- 1.14.10: 'test: Added templates'
