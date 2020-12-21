@@ -1,0 +1,137 @@
+versions:
+- 1.0.0: Initial version
+- 1.0.1: Added git function in release script
+- 1.0.2: Added creation of release version archive
+- 1.0.3: Added creation of release version archive
+- 1.0.4: Added creation of release version archive
+- 1.0.5: Modified copying of prod version archive
+- 1.0.6: Modified copying of prod version archive
+- 1.0.7: test
+- 1.0.8: Modified log file
+- 1.0.9: Modified gitignore to exclude dev/
+- 1.0.10: Modified gitignore to exclude backup/
+- 1.0.11: Removed backup/ and dev/ dirs. Added func for creating logs dir
+- 1.0.12: Renamed actual version to Latest
+- 1.0.13: Renamed actual version to latest.zip and rename test
+- 1.0.14: Reinitialized prod/ dir
+- 1.0.15: test
+- 1.0.16: test
+- 1.0.17: Renamed latest.zip to stable.zip because of gitignore "test"
+- 1.0.18: test
+- 1.0.19: Added link to change log and download link in versions file
+- 1.0.20: Added tests/ directory
+- 1.0.21: Added tests/ directory
+- 1.0.22: Removed __pycache__/ dir from git
+- 1.0.23: Added dev/ dir
+- 1.1.0: Completely modified logger, rewrited Adventures script
+- 1.1.1: Added version.txt to backup and release archive
+- 1.1.2: Added ADVENTURES_SLEEP parameter to var.py
+- 1.1.3: bat files added to gitignore
+- 1.1.4: Debug booleans and sleeps moved to var.py
+- 1.2.0: Rewrited Dorf1_upgrade script
+- 1.2.1: Fixed bugs with all resources max lvl and telegram bot
+- 1.3.0: Rewrited Dorf2_upgrade script, fixed bugs in Adventures script
+- 1.4.0: 'Found bug in Upgrade dorf1: if all 10 lvl, scritp checks it 2 times..'
+- 1.2.2: Wrong versions detected
+- 1.2.3: Fixed versions misconfig
+- 1.2.4: 'Fixed bug in adventures script: If hero not at home, script restarts'
+- 1.2.5: Added bugtracker.txt file to track active and resolved bugs
+- 1.2.6: bug_2# commited
+- 1.2.7: Added link to bugtracker to versions.txt
+- 1.2.8: Fixed bug_2#
+- 1.3.0: Revrited init.py, added init.bat to release build, modified scripts directories
+- 1.3.1: Added cration of farmlist template file in init.py
+- 1.3.2: Rewrited init.bat with relative path
+- 1.4.0: Added elephants_finder script to release build
+- 1.4.1: 'Some fixes in elephants finder. Removed farm script from release: need to
+    check'
+- 1.4.2: Elephant.txt added to gitignore
+- 1.4.3: Elephant.txt added to gitignore
+- 1.4.4: Fixed minor bug in dorf1_upgrade.
+- 1.4.5: Removed legacy scripts from gitignore to track develop versions
+- 1.5.0: Added new check_overres script, added creation of info.txt template file
+- 1.5.1: Removed old scripts from git
+- 1.5.2: Added info.txt creation to standard function
+- 1.6.0: Added RASKAT script
+- 1.7.0: Added userinfo file, separated from var.py
+- 1.8.0: Added check_attacks and save troops scripts. Debugs not done
+- 1.8.1: Fixed some bugs in adventures script and check attacks script. Added little
+    more dubug
+- 1.8.2: Fixed some bugs in check_attacks script, added more info to telegram bot
+- 1.9.0: Added send_farm script
+- 1.9.1: Removed legacy scripts
+- 1.9.2: Removed userinfo from main directory
+- 1.9.3: Modified var.py
+- 1.9.4: Removed unnessesary gitops.py script
+- 1.9.5: 'Removed unnessesary gitops.py script #2'
+- 1.9.7: verions file moved to main directory
+- 1.9.8: Modified version file location
+- 1.9.9: Added some useful scripts from previous servers to legacy folder
+- 1.9.10: Added backup directory to git. If u wanna download old version :)
+- 1.9.11: Added old verions to version file
+- 1.9.12: Little fix in version file
+- 1.9.14: Removed unnessesary tests dir
+- 1.9.15: Modified release log timestamp
+- 1.9.16: Some fixes in release log
+- 1.9.17: Some fixes in release log again
+- 1.9.18: Removed farm string from info file
+- 1.9.21: bug_3# and bug_4# commited as CRITICAL
+- 1.9.22: Removed test scripts dir from git
+- 1.10.0: Added deploy script. Added README file
+- 1.10.1: Deploy script now creates init.bat file. Fixed bug_3#, created userinfo_template
+    file
+- 1.10.2: init.bat added to gitignore
+- 1.10.3: trying to fix bug_4#
+- 1.10.18: Fixed bug_4#
+- 1.10.19: Deploy script now executes init.bat file
+- 1.10.20: Removed old backups that are reffered in bug_4#
+- 1.10.21: Added more logging to deploy scipt
+- 1.10.22: Some corrections in AtergatisVersions file
+- 1.10.23: Trying to rewrite AtergatisVersions file in class
+- 1.10.24: AtergatisVersions file rewrited in class
+- 1.11.0: Removed userinfo file and greatly modified var.py. Added userinfo.yaml file,
+    added userinfo_template file creation. Modified calculate_time function for adventures
+    and get_village link function. userinfo.yaml to gitignore
+- 1.11.1: Removed userinfo.py from scripts
+- 1.11.2: Added templates dir to release file
+- 1.11.3: Fixed deploy script for userinfo.yaml
+- 1.11.4: Removed check logs dir from init script. Deploy script now executes init
+    script without creating init.bat
+- 1.11.5: Fixed path to userinfo file in var.py
+- 1.11.6: Fixed relative paths in AtergatisMain script
+- 1.11.7: Upgraded deploy script
+- 1.11.8: Some fixes in deploy script
+- 1.11.9: Renamed bat files
+- 1.11.10: Renamed data files
+- 1.11.11: Renamed info file to data_tasks.txt
+- 1.11.12: Fixed executor name, added data_ files to gitignore
+- 1.11.13: Created constant links to scripts, added attacks and overres scripts to
+    init.py. Added elephants finder executor
+- 1.11.14: Fixed executors
+- 1.11.15: Fixed executors again
+- 1.11.16: Fixed path in elephants script
+- 1.11.17: Git moved to separate script
+- 1.11.18: Tests of bandages script
+- 1.11.19: Tests of bandages script
+- 1.11.20: Tests of bandages script
+- 1.11.21: Added buy small bandages
+- 1.11.22: Final test of bandages script
+- 1.12.0: Added buy_bandages script
+- 1.12.1: Userinfo file renamed to config.yaml and corrected
+- 1.12.2: Corrected version.txt file
+- 1.12.3: Userinfo_template renamed to config_template
+- 1.12.4: Userinfo_template renamed to config_template
+- 1.12.5: Added telegram notification of new minor or major release
+- 1.12.6: Corrected version.txt file
+- 1.12.7: Test debugging userdata
+- 1.12.8: Test debugging userdata
+- 1.12.9: Test debugging userdata
+- 1.12.10: Test debugging userdata
+- 1.12.11: Added comments to config_template file
+- 1.12.12: 'stable: Test creating stable build'
+- 1.13.0: 'stable: Added release tag: test/stable and changed creating versions mechanism'
+- 1.13.1: 'test: Test of creating test build'
+- 1.13.2: 'test: Changed deploy script to deploy stable or test build'
+- 1.13.3: 'test: Test after renaming git repo'
+- 1.13.4: 'test: Test after renaming git repo'
+- 1.13.5: 'stable: Test git repos'
