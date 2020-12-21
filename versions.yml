@@ -148,3 +148,4 @@ versions:
 - 1.14.1: 'test: Reported bugs 5,6; added more debug in calculate resources functions
     AtergatisMain script'
 - 1.14.2: 'test: Trying to fix bug 6'
+- 1.14.3: 'test: Trying to fix bug 6. Added more debug'
