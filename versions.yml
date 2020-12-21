@@ -160,3 +160,5 @@ versions:
 - 1.14.12: 'test: Fixed deploy file'
 - 1.14.13: 'test: Fixed deploy file. Wrong dirs'
 - 1.14.14: 'test: Test new dorf1 template'
+- 1.14.15: 'test: Added and tested Dorf1 template, removed data_build_dorf1.txt from
+    init script, but left check of it presence'
