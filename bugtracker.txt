@@ -1,9 +1,6 @@
 ====================================================================================================
 Active bugs:
 ====================================================================================================
-bug_1# Reported: 1.2.3: If all resource fields are 10 lvl, script checks all fields 2 times (need 1).
-bug_5# Reported: 1.14.0: In build_dorf_1 script log: 'Target level not reached' and then 'Sleeping n seconds'
-bug_6# Reported: 1.14.0: In build_dorf_2 script: buildings are builded in incorrect order but in circle
 
 
 
@@ -13,3 +10,6 @@ Fixed bugs:
 bug_2# Reported: 1.2.6: In check_adventures.py: not working sleep after sending hero to adventure
 bug_3# CRITICAL: Need to delete userinfo.py from git and create userinfo_template file. 
 bug_4# CRITICAL: Need to delete userinfo.py from backups
+bug_6# Reported: 1.14.0: In build_dorf_2 script: buildings are builded in incorrect order but in circle
+bug_5# Reported: 1.14.0: In build_dorf_1 script log: 'Target level not reached' and then 'Sleeping n seconds'
+bug_1# Reported: 1.2.3: If all resource fields are 10 lvl, script checks all fields 2 times (need 1).

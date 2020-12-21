@@ -152,3 +152,4 @@ versions:
 - 1.14.4: 'test: Trying to fix bug 6. Probable fix'
 - 1.14.5: 'test: Trying to fix bug 6. Probable fix'
 - 1.14.6: 'stable: Fixed bug_6# but bug 1 is in dorf2 upgrade too'
+- 1.14.7: 'stable: Fixed bugs 1 and 5'
