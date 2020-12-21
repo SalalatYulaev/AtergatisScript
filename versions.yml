@@ -164,3 +164,4 @@ versions:
     init script, but left check of it presence'
 - 1.14.16: 'test: Fixed get_village_link function'
 - 1.14.17: 'test: testing raskat script'
+- 1.14.18: 'test: Updated raskat script'
