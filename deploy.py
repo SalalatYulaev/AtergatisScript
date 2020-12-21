@@ -58,12 +58,12 @@ def _unzip():
 	if os.path.exists(release_file):
 		with ZipFile(release_file) as zf:
 			zf.extractall()
-			deploy_log("Stable build deployed")
+			deploy_log("Stable build unzipped")
 	else:
 		if os.path.exists(test_file):
 			with ZipFile(test_file) as zf:
 				zf.extractall()
-				deploy_log("Test build deployed")
+				deploy_log("Test build unzipped")
 
 
 def _check_config_file():
