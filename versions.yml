@@ -138,3 +138,5 @@ versions:
 - 1.13.6: 'stable: Test git repos'
 - 1.13.7: 'stable: Test pushing both repos'
 - 1.13.8: 'stable: Removed prod dir from dev gir branch'
+- 1.13.9: 'stable: Added copy deploy script and butracker file to prod dir'
+- 1.13.10: 'stable: Added copy deploy script and butracker file to prod dir'
