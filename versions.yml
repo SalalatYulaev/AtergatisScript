@@ -167,3 +167,4 @@ versions:
 - 1.14.18: 'test: Updated raskat script'
 - 1.14.19: 'test: Removed check farmlist dir and create farmlist template from init
     script. Started testing new dorf2 template'
+- 1.14.20: 'test: Testing new dorf2 template'
