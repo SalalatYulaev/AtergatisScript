@@ -170,3 +170,5 @@ versions:
 - 1.14.20: 'test: Testing new dorf2 template'
 - 1.15.0: 'stable: Added template files for buildig dorf1/2, farmlist and raskat.
     Scripts modified to work with templates and tested'
+- 1.15.1: 'stable: Modified data_tasks file and added to templates. Removed from init
+    script'

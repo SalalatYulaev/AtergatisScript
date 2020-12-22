@@ -14,8 +14,6 @@ log_file = "logs\\deploy.log"
 scripts_path = "scripts\\"
 new_scripts_path = "AtergatisScript\\scripts\\"
 templates_dir = "AtergatisScript\\scripts\\templates\\"
-# config_file = "config.yaml"
-# config_template = "AtergatisScript\\scripts\\templates\\config.yaml"
 init_script = "scripts\\init.py"
 
 
@@ -66,20 +64,6 @@ def _unzip():
 				deploy_log("Test build unzipped")
 
 
-# def _check_config_file():
-# 	if not os.path.exists(config_file):
-# 		if not os.path.exists(config_template):
-# 			deploy_log("Userinfo and config_template not found!", level='ALARM')
-# 		else:
-# 			deploy_log("Creating config_file")
-# 			os.rename(config_template, config_file)
-# 			deploy_log("Removing template")
-# 			rmtree("AtergatisScript\\scripts\\templates")
-# 	else:
-# 		deploy_log("Userinfo file exists. Removing template.")
-# 		rmtree("AtergatisScript\\scripts\\templates")
-
-
 def _copy_templates():
 	deploy_log("Starting copying templates")
 	template_files = os.listdir(templates_dir)
@@ -97,10 +81,7 @@ def _copy_scripts():
 	deploy_log("Starting copying scripts")
 	for file in os.listdir(new_scripts_path):
 		copyfile(new_scripts_path + file, scripts_path + file)
-
-
-def _rem_tmp_dir():
-	deploy_log("Removing temp scripts dir")
+	deploy_log("Scripts copied. Removing temp scripts dir")
 	rmtree("AtergatisScript")
 
 
@@ -116,10 +97,8 @@ def _execute_init():
 def full_deploy():
 	deploy_log("Full deploy started")
 	_unzip()
-	_copy_templates()
-	
+	_copy_templates()	
 	_copy_scripts()
-	_rem_tmp_dir()
 	_execute_init()
 
 
