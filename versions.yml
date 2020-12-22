@@ -165,3 +165,5 @@ versions:
 - 1.14.16: 'test: Fixed get_village_link function'
 - 1.14.17: 'test: testing raskat script'
 - 1.14.18: 'test: Updated raskat script'
+- 1.14.19: 'test: Removed check farmlist dir and create farmlist template from init
+    script. Started testing new dorf2 template'
