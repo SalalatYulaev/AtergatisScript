@@ -168,3 +168,5 @@ versions:
 - 1.14.19: 'test: Removed check farmlist dir and create farmlist template from init
     script. Started testing new dorf2 template'
 - 1.14.20: 'test: Testing new dorf2 template'
+- 1.15.0: 'stable: Added template files for buildig dorf1/2, farmlist and raskat.
+    Scripts modified to work with templates and tested'

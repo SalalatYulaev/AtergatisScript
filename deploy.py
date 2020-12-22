@@ -13,9 +13,9 @@ log_dir = "logs\\"
 log_file = "logs\\deploy.log"
 scripts_path = "scripts\\"
 new_scripts_path = "AtergatisScript\\scripts\\"
-templates_dir = "scripts\\templates\\"
-config_file = "config.yaml"
-config_template = "AtergatisScript\\scripts\\templates\\config_template.yaml"
+templates_dir = "AtergatisScript\\scripts\\templates\\"
+# config_file = "config.yaml"
+# config_template = "AtergatisScript\\scripts\\templates\\config.yaml"
 init_script = "scripts\\init.py"
 
 
@@ -66,18 +66,31 @@ def _unzip():
 				deploy_log("Test build unzipped")
 
 
-def _check_config_file():
-	if not os.path.exists(config_file):
-		if not os.path.exists(config_template):
-			deploy_log("Userinfo and config_template not found!", level='ALARM')
+# def _check_config_file():
+# 	if not os.path.exists(config_file):
+# 		if not os.path.exists(config_template):
+# 			deploy_log("Userinfo and config_template not found!", level='ALARM')
+# 		else:
+# 			deploy_log("Creating config_file")
+# 			os.rename(config_template, config_file)
+# 			deploy_log("Removing template")
+# 			rmtree("AtergatisScript\\scripts\\templates")
+# 	else:
+# 		deploy_log("Userinfo file exists. Removing template.")
+# 		rmtree("AtergatisScript\\scripts\\templates")
+
+
+def _copy_templates():
+	deploy_log("Starting copying templates")
+	template_files = os.listdir(templates_dir)
+	for file in template_files:
+		if not file in os.listdir():
+			deploy_log(f"{file} not found. Copying")
+			copyfile(templates_dir + file, file)
 		else:
-			deploy_log("Creating config_file")
-			os.rename(config_template, config_file)
-			deploy_log("Removing template")
-			rmtree("AtergatisScript\\scripts\\templates")
-	else:
-		deploy_log("Userinfo file exists. Removing template.")
-		rmtree("AtergatisScript\\scripts\\templates")
+			deploy_log(f"{file} exists")
+	deploy_log("Templates copied. Removing templates dir.")
+	rmtree("AtergatisScript\\scripts\\templates")
 
 
 def _copy_scripts():
@@ -103,7 +116,8 @@ def _execute_init():
 def full_deploy():
 	deploy_log("Full deploy started")
 	_unzip()
-	_check_config_file()
+	_copy_templates()
+	
 	_copy_scripts()
 	_rem_tmp_dir()
 	_execute_init()
