@@ -184,3 +184,4 @@ versions:
     Added monitoring-agent function to check_attacks script'
 - 1.15.10: 'test: Rewrited check_attacks script with async functions. Added async
     keep-alive function'
+- 1.15.11: 'test: Modified monitoring script'
