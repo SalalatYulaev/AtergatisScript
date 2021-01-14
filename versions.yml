@@ -179,3 +179,4 @@ versions:
 - 1.15.5: 'test: Fixed var.py'
 - 1.15.6: 'test: Fixed check_attacks.py'
 - 1.15.7: 'test: Fixed check_attacks.py'
+- 1.15.8: 'test: Fixed monitoring in check_attacks.py'
