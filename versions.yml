@@ -175,3 +175,4 @@ versions:
 - 1.15.2: 'stable: Modified check overres script and main_tasks script'
 - 1.15.3: 'test: Corrected data_tasks file, modified deploy script to create temp
     dir'
+- 1.15.4: 'test: Added monitoring section to var.py and check attacks script'
