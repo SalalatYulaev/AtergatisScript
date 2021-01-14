@@ -185,3 +185,4 @@ versions:
 - 1.15.10: 'test: Rewrited check_attacks script with async functions. Added async
     keep-alive function'
 - 1.15.11: 'test: Modified monitoring script'
+- 1.15.12: 'test: Rewrited Adventures script with async and monitoring agent'
