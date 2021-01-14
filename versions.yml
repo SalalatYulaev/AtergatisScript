@@ -177,3 +177,4 @@ versions:
     dir'
 - 1.15.4: 'test: Added monitoring section to var.py and check attacks script'
 - 1.15.5: 'test: Fixed var.py'
+- 1.15.6: 'test: Fixed check_attacks.py'
