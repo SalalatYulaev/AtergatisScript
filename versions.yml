@@ -182,3 +182,5 @@ versions:
 - 1.15.8: 'test: Fixed monitoring in check_attacks.py'
 - 1.15.9: 'test: Added async monitoring script, added monitoring logs, executor, debug.
     Added monitoring-agent function to check_attacks script'
+- 1.15.10: 'test: Rewrited check_attacks script with async functions. Added async
+    keep-alive function'
