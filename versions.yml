@@ -194,3 +194,4 @@ versions:
 - 1.15.17: 'test: Get_dorf1_queue moved to dorf1 script'
 - 1.15.18: 'test: Created actions file. Rewrited dorf1/2? farm and raskat scripts
     to use actions file'
+- 1.15.19: 'test: Removed legacy templates'
