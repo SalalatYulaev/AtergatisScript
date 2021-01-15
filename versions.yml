@@ -191,3 +191,4 @@ versions:
 - 1.15.15: 'test: Rewrited farm, attacks and adventures scripts: keep-alive and check_mon_file
     functions moved to Main script'
 - 1.15.16: 'test: Added monitoring section to config file'
+- 1.15.17: 'test: Get_dorf1_queue moved to dorf1 script'
