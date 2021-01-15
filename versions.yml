@@ -187,3 +187,4 @@ versions:
 - 1.15.11: 'test: Modified monitoring script'
 - 1.15.12: 'test: Rewrited Adventures script with async and monitoring agent'
 - 1.15.13: 'test: Added monitoring to farm script'
+- 1.15.14: 'test: Fixed monitoring in farm script'
