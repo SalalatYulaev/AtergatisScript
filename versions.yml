@@ -188,5 +188,6 @@ versions:
 - 1.15.12: 'test: Rewrited Adventures script with async and monitoring agent'
 - 1.15.13: 'test: Added monitoring to farm script'
 - 1.15.14: 'test: Fixed monitoring in farm script'
-- 1.15.15: 'test: Rewrited farm. attacks and adventures scripts: keep-alive and check_mon_file
+- 1.15.15: 'test: Rewrited farm, attacks and adventures scripts: keep-alive and check_mon_file
     functions moved to Main script'
+- 1.15.16: 'test: Added monitoring section to config file'
