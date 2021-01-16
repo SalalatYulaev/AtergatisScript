@@ -202,3 +202,5 @@ versions:
 - 1.15.22: 'test: Monitoring at overres and bandages bandages scripts completely rewrited.
     Added monitoring agents. Great fuckup, rewrited again'
 - 1.15.23: 'test: Fixed Adventures script'
+- 1.15.24: 'test: TEst monitoring all. Probably ok. Ready for release. Neede to check
+    farm, but no gold'
