@@ -204,3 +204,5 @@ versions:
 - 1.15.23: 'test: Fixed Adventures script'
 - 1.15.24: 'test: TEst monitoring all. Probably ok. Ready for release. Neede to check
     farm, but no gold'
+- 1.16.0: 'prod: TEst monitoring all. Probably ok. Ready for release. Neede to check
+    farm, but no gold'
