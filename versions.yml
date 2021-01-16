@@ -197,3 +197,5 @@ versions:
 - 1.15.19: 'test: Removed legacy templates'
 - 1.15.20: 'test: NACHALO kakogo-to tresha, esli pizda, otkatyvatsa na prepyduschujy
     versijy'
+- 1.15.21: 'test: Monitoring at overres and bandages bandages scripts completely rewrited.
+    Added monitoring agents'
