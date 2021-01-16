@@ -195,3 +195,5 @@ versions:
 - 1.15.18: 'test: Created actions file. Rewrited dorf1/2? farm and raskat scripts
     to use actions file'
 - 1.15.19: 'test: Removed legacy templates'
+- 1.15.20: 'test: NACHALO kakogo-to tresha, esli pizda, otkatyvatsa na prepyduschujy
+    versijy'
