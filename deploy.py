@@ -28,6 +28,7 @@ def deploy_log(data, level='INFO'):
 
 
 def _check_dirs():
+	deploy_log("Checking dirs")
 	if not os.path.exists(log_dir):
 		os.makedirs(log_dir)
 		deploy_log("Created logs dir")
@@ -61,10 +62,12 @@ def _check_release_file():
 
 
 def _check_deploy_list_file():
+	deploy_log("Checking deploy_list file")
 	with open(deploy_info_file) as f:
 		data = yaml.safe_load(f)
 	deployment = data['deployment'].lower()
 	scripts = data['update_scripts']
+	deploy_log(f"Deployment: {deployment}")
 	return deployment, scripts
 
 
@@ -82,7 +85,7 @@ def _unzip():
 
 
 def _copy_templates():
-	deploy_log("Starting copying templates")
+	deploy_log("Copying templates")
 	template_files = os.listdir(templates_dir)
 	for file in template_files:
 		if not file in os.listdir():
@@ -95,18 +98,20 @@ def _copy_templates():
 
 
 def _copy_scripts():
-	deploy_log("Starting copying scripts")
+	deploy_log("Copying scripts")
 	for file in os.listdir(new_scripts_path):
+		deploy_log(f"Copying {file}")
 		copyfile(new_scripts_path + file, scripts_path + file)
 	deploy_log("Scripts copied. Removing temp scripts dir")
 	rmtree("AtergatisScript")
 
 
 def _copy_custom_scripts(scripts):
-	deploy_log("Starting copying custom scripts")
+	deploy_log("Copying custom scripts")
 	for entry in scripts:
 		for script, boo in entry.items():
 			if boo:
+				deploy_log(f"Copying {script}")
 				copyfile(new_scripts_path + script, scripts_path + script)
 	deploy_log("Scripts copied. Removing temp scripts dir")
 	rmtree("AtergatisScript")
@@ -145,11 +150,15 @@ def update_files():
 def deploy():
 	_check_dirs()
 	if _check_release_file():
-		deploy, scripts = _check_deploy_list_file()
-		if deploy == "full":
+		try:
+			deploy, scripts = _check_deploy_list_file()
+			if deploy == "full":
+				full_deploy()
+			if deploy == "custom":
+				custom_deploy(scripts)
+		except Exception as err:
+			deploy_log(f"Error: {str(err)}")
 			full_deploy()
-		if deploy == "custom":
-			custom_deploy(scripts)
 	else:
 		update_files()
 	deploy_log("=" * 30)
