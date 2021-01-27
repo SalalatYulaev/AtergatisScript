@@ -1,0 +1,23 @@
+---
+
+########################################
+# deployment could be full or custom
+########################################
+
+deployment: custom
+
+update_scripts:
+  - "buy_bandages.py": True
+  - "check_adventures.py": False
+  - "check_attacks.py": False
+  - "check_overres.py": False
+  - "dorf1_upgrade.py": False
+  - "dorf2_upgrade.py": False
+  - "elephants_finder.py": False
+  - "init.py": False
+  - "main_tasks.py": False
+  - "monitoring.py": False
+  - "raskat.py": False
+  - "save_troops.py": False
+  - "send_farm.py": False
+  - "var.py": False

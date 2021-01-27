@@ -1,6 +1,7 @@
 import os
 import sys
 import subprocess
+import yaml
 from datetime import datetime
 from shutil import copyfile, rmtree
 from zipfile import ZipFile
@@ -11,17 +12,30 @@ release_file = "stable.zip"
 test_file = "test.zip"
 log_dir = "logs\\"
 log_file = "logs\\deploy.log"
+deploy_info_file = "deploy_list.yml"
 scripts_path = "scripts\\"
 new_scripts_path = "AtergatisScript\\scripts\\"
 templates_dir = "AtergatisScript\\scripts\\templates\\"
 init_script = "scripts\\init.py"
+mon_dir = "monitoring\\"
 
+
+
+def deploy_log(data, level='INFO'):
+	timestamp = datetime.strftime(datetime.now(), "%Y-%m-%d_%H:%M:%S")
+	with open(log_file, 'a') as f:
+		f.write("{:22}{:8}{}\n".format(timestamp, level, str(data)))
 
 
 def _check_dirs():
 	if not os.path.exists(log_dir):
 		os.makedirs(log_dir)
 		deploy_log("Created logs dir")
+	else:
+		deploy_log("Logs dir exists")
+	if not os.path.exists(mon_dir):
+		os.makedirs(mon_dir)
+		deploy_log("Created temp dir")
 	else:
 		deploy_log("Logs dir exists")
 	if not os.path.exists(scripts_path):
@@ -32,6 +46,7 @@ def _check_dirs():
 
 
 def _check_release_file():
+	deploy_log("Checking release file")
 	if not os.path.exists(release_file):
 		deploy_log("Release file not exists, searching for test file")
 		if not os.path.exists(test_file):
@@ -45,10 +60,12 @@ def _check_release_file():
 		return True
 
 
-def deploy_log(data, level='INFO'):
-	timestamp = datetime.strftime(datetime.now(), "%Y-%m-%d_%H:%M:%S")
-	with open(log_file, 'a') as f:
-		f.write("{:22}{:8}{}\n".format(timestamp, level, str(data)))
+def _check_deploy_list_file():
+	with open(deploy_info_file) as f:
+		data = yaml.safe_load(f)
+	deployment = data['deployment'].lower()
+	scripts = data['update_scripts']
+	return deployment, scripts
 
 
 def _unzip():
@@ -85,6 +102,16 @@ def _copy_scripts():
 	rmtree("AtergatisScript")
 
 
+def _copy_custom_scripts(scripts):
+	deploy_log("Starting copying custom scripts")
+	for entry in scripts:
+		for script, boo in entry.items():
+			if boo:
+				copyfile(new_scripts_path + script, scripts_path + script)
+	deploy_log("Scripts copied. Removing temp scripts dir")
+	rmtree("AtergatisScript")
+
+
 def _execute_init():
 	if not os.path.exists(init_script):
 		deploy_log("Init script NOT found, aborting")
@@ -102,6 +129,14 @@ def full_deploy():
 	_execute_init()
 
 
+def custom_deploy(scripts):
+	deploy_log("Partial deploy started")
+	_unzip()
+	_copy_templates()
+	_copy_custom_scripts(scripts)
+	_execute_init()	
+
+
 def update_files():
 	deploy_log("Upgrade files started")
 	_execute_init()
@@ -110,7 +145,11 @@ def update_files():
 def deploy():
 	_check_dirs()
 	if _check_release_file():
-		full_deploy()
+		deploy, scripts = _check_deploy_list_file()
+		if deploy == "full":
+			full_deploy()
+		if deploy == "custom":
+			custom_deploy(scripts)
 	else:
 		update_files()
 	deploy_log("=" * 30)
