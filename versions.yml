@@ -210,3 +210,5 @@ versions:
     farm, but no gold'
 - 1.18.0: 'asd: TEst monitoring all. Probably ok. Ready for release. Neede to check
     farm, but no gold'
+- 1.18.1: 'test: Added ability to update custom scripts. Added deploy_info file, modified
+    deploy script'
