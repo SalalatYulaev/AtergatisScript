@@ -212,3 +212,4 @@ versions:
     farm, but no gold'
 - 1.18.1: 'test: Added ability to update custom scripts. Added deploy_info file, modified
     deploy script'
+- 1.18.2: 'test: Modified deploy script, added more debug'
