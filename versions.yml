@@ -221,3 +221,4 @@ versions:
 - 1.16.0: Fix versions
 - 1.16.1: 'test: Test versions script bug'
 - 1.17.0: 'test: Added permissions of using scripts'
+- 1.18.0: 'kolian: Added permissions of using scripts'
