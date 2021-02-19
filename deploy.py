@@ -28,7 +28,6 @@ def deploy_log(data, level='INFO'):
 
 
 def _check_dirs():
-	deploy_log("Checking dirs")
 	if not os.path.exists(log_dir):
 		os.makedirs(log_dir)
 		deploy_log("Created logs dir")
