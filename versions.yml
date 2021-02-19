@@ -215,3 +215,4 @@ versions:
 - 1.18.2: 'test: Modified deploy script, added more debug'
 - 1.18.3: 'test: Test hidden file'
 - 1.18.4: 'test: Test permissions for useng scripts'
+- 1.18.5: 'test: Test permissions for useng scripts'
