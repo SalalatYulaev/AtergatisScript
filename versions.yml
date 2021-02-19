@@ -218,3 +218,5 @@ versions:
 - 1.18.5: 'test: Test permissions for useng scripts'
 - 1.18.6: 'test: Fixed wrong calculator in permissions function'
 - 1.18.7: 'test: Fixed syntax in AtergatisMain script'
+- 1.16.0: Fix versions
+- 1.16.1: 'test: Test versions script bug'
