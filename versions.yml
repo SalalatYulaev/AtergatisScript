@@ -221,3 +221,4 @@ versions:
 - 1.16.0: Fix versions
 - 1.16.1: 'test: Test versions script bug'
 - 1.17.0: 'stable: Added permissions of using scripts'
+- 1.17.1: 'test: Added color and exception fix to check_attacks script'
