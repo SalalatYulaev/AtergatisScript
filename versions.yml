@@ -224,3 +224,4 @@ versions:
 - 1.17.1: 'test: Added color and exception fix to check_attacks script'
 - 1.17.2: 'test: Added logout function, added some legacy scripts for task sheduler'
 - 1.17.3: 'stable: Test release version push to git'
+- 1.17.4: 'test: Added no-windows function'
