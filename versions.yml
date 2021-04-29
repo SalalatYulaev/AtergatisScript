@@ -226,3 +226,4 @@ versions:
 - 1.17.3: 'stable: Test release version push to git'
 - 1.17.4: 'test: Added no-windows function'
 - 1.17.5: 'stable: Added no-windows function'
+- 1.17.6: 'stable: Added no-windows function'
