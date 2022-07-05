@@ -227,3 +227,4 @@ versions:
 - 1.17.4: 'test: Added no-windows function'
 - 1.17.5: 'stable: Added no-windows function'
 - 1.17.6: 'stable: Added no-windows function'
+- 1.17.7: 'test: Simple test'
