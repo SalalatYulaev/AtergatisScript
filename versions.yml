@@ -229,3 +229,4 @@ versions:
 - 1.17.6: 'stable: Added no-windows function'
 - 1.17.7: 'test: Simple test'
 - 1.17.8: 'stable: Fucking test'
+- 1.18.0: 'stable: Fucking test 1'
